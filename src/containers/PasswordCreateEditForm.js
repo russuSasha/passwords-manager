@@ -21,12 +21,18 @@ const validationSchema = Joi.object().keys({
 
 const PasswordCreateEditForm = ({
   caption,
+  goBack,
   isDeleteButtonShown,
   handleDelete,
   handleSubmit,
   reset,
 }) => (
   <Container maxWidth="sm">
+    <Button variant="outlined" onClick={goBack}>
+      go back
+    </Button>
+    <br />
+    <br />
     {caption}
     <form>
       <Grid
@@ -35,7 +41,9 @@ const PasswordCreateEditForm = ({
         justify="flex-start"
         alignItems="center"
       >
-        <Field name="site" label="Site" component={Input} />
+        <Grid item xs={12}>
+          <Field name="site" label="Site" component={Input} />
+        </Grid>
         <Field name="userName" label="User name" component={Input} />
         <Field name="password" label="Password" component={Input} />
         <Grid
@@ -47,11 +55,11 @@ const PasswordCreateEditForm = ({
           <Button variant="outlined" onClick={reset}>
             Cancel
           </Button>
-          <Button variant="outlined" color="secondary" onClick={handleSubmit}>
+          <Button variant="outlined" color="primary" onClick={handleSubmit}>
             Save
           </Button>
           {isDeleteButtonShown && (
-            <Button variant="outlined" color="primary" onClick={handleDelete}>
+            <Button variant="outlined" color="secondary" onClick={handleDelete}>
               Delete
             </Button>
           )}
@@ -71,6 +79,7 @@ PasswordCreateEditForm.propTypes = {
   initialValues: PropTypes.shape(), // eslint-disable-line
   caption: PropTypes.string.isRequired,
   onSubmit: PropTypes.func.isRequired, // eslint-disable-line
+  goBack: PropTypes.func.isRequired,
   isDeleteButtonShown: PROP_TYPES.bool,
   handleDelete: PROP_TYPES.func,
   handleSubmit: PropTypes.func.isRequired,
