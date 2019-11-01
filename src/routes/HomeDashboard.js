@@ -16,7 +16,7 @@ const useStyles = makeStyles(theme => ({
     width: '100%',
   },
 }))
-
+// TODO: add search
 const HomeDashboard = ({ passwords }) => {
   const classes = useStyles()
 
