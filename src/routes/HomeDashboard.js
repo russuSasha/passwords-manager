@@ -7,9 +7,6 @@ import { CREATE_PASSWORD_ROUTE, EDIT_PASSWORD_ROUTE } from 'constants/routes'
 import PROP_TYPES from 'constants/propTypes'
 
 const useStyles = makeStyles(theme => ({
-  root: {
-    flexGrow: 1,
-  },
   paper: {
     padding: theme.spacing(1),
     textAlign: 'center',
@@ -36,6 +33,7 @@ const HomeDashboard = ({ passwords }) => {
           <Button variant="outlined">Add new</Button>
         </Link>
       </Grid>
+      <br />
       <Grid container spacing={3}>
         {passwords.map(({ id: passwordId, site, userName, password }) => (
           <Grid key={passwordId} container item xs={12} spacing={1}>

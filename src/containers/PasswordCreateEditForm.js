@@ -41,11 +41,10 @@ const PasswordCreateEditForm = ({
         justify="flex-start"
         alignItems="center"
       >
-        <Grid item xs={12}>
-          <Field name="site" label="Site" component={Input} />
-        </Grid>
+        <Field name="site" label="Site" component={Input} />
         <Field name="userName" label="User name" component={Input} />
         <Field name="password" label="Password" component={Input} />
+        <br />
         <Grid
           container
           direction="row"

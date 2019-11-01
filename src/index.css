@@ -6,3 +6,10 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+a,
+a:hover,
+a:active,
+a:focus {
+  text-decoration: none;
+}
