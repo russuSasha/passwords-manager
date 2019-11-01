@@ -1,11 +1,9 @@
 import React from 'react'
 import { Provider } from 'react-redux'
-import { Switch, Route } from 'react-router-dom'
-import { ConnectedRouter } from 'connected-react-router'
+import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import { HomeDashboard, CreatePassword, Settings, NoMatch } from './routes'
 import ErrorBoundary from './containers/ErrorBoundary'
 import store from './redux/store'
-import { history } from './redux/router'
 import {
   HOME_DASHBOARD_ROUTE,
   CREATE_PASSWORD_ROUTE,
@@ -16,7 +14,7 @@ import {
 const App = () => (
   <Provider store={store}>
     <ErrorBoundary>
-      <ConnectedRouter history={history}>
+      <Router>
         <Switch>
           <Route exact path={HOME_DASHBOARD_ROUTE} component={HomeDashboard} />
           <Route
@@ -27,7 +25,7 @@ const App = () => (
           <Route path={SETTINGS_ROUTE} component={Settings} />
           <Route path={NO_MATCH_ROUTE} component={NoMatch} />
         </Switch>
-      </ConnectedRouter>
+      </Router>
     </ErrorBoundary>
   </Provider>
 )

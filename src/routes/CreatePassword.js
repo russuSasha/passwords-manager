@@ -25,11 +25,7 @@ CreatePassword.propTypes = {
 }
 
 export default connect(
-  ({
-    articles: {
-      current: { articlesCategories },
-    },
-  }) => ({ articlesCategories }),
+  null,
   {
     createPassword: passwordsModule.createPassword,
   }
