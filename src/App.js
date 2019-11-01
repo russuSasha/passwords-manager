@@ -15,13 +15,12 @@ import {
   CREATE_PASSWORD_ROUTE,
   EDIT_PASSWORD_ROUTE,
   SETTINGS_ROUTE,
-  NO_MATCH_ROUTE,
 } from './constants/routes'
 
 const App = () => (
   <Provider store={store}>
     <ErrorBoundary>
-      <Router>
+      <Router basename="/passwords-manager">
         <Layout>
           <Switch>
             <Route
@@ -36,7 +35,7 @@ const App = () => (
             />
             <Route path={EDIT_PASSWORD_ROUTE} component={EditPassword} />
             <Route path={SETTINGS_ROUTE} component={Settings} />
-            <Route path={NO_MATCH_ROUTE} component={NoMatch} />
+            <Route component={NoMatch} />
           </Switch>
         </Layout>
       </Router>

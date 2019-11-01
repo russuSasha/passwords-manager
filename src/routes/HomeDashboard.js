@@ -19,9 +19,8 @@ const useStyles = makeStyles(theme => ({
 // TODO: add search
 const HomeDashboard = ({ passwords }) => {
   const classes = useStyles()
-  console.log(1)
-  
-return (
+
+  return (
     <>
       <Grid
         container
