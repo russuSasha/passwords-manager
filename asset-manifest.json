@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/passwords-manager/static/css/main.a576c54a.chunk.css",
+    "main.js": "/passwords-manager/static/js/main.1ade54b5.chunk.js",
+    "main.js.map": "/passwords-manager/static/js/main.1ade54b5.chunk.js.map",
+    "runtime-main.js": "/passwords-manager/static/js/runtime-main.a79d8d88.js",
+    "runtime-main.js.map": "/passwords-manager/static/js/runtime-main.a79d8d88.js.map",
+    "static/js/2.fc579257.chunk.js": "/passwords-manager/static/js/2.fc579257.chunk.js",
+    "static/js/2.fc579257.chunk.js.map": "/passwords-manager/static/js/2.fc579257.chunk.js.map",
+    "index.html": "/passwords-manager/index.html",
+    "precache-manifest.1eab080ca6a7c771e4e791db19228c4d.js": "/passwords-manager/precache-manifest.1eab080ca6a7c771e4e791db19228c4d.js",
+    "service-worker.js": "/passwords-manager/service-worker.js",
+    "static/css/main.a576c54a.chunk.css.map": "/passwords-manager/static/css/main.a576c54a.chunk.css.map"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.a79d8d88.js",
+    "static/js/2.fc579257.chunk.js",
+    "static/css/main.a576c54a.chunk.css",
+    "static/js/main.1ade54b5.chunk.js"
+  ]
+}
