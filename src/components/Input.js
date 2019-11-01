@@ -7,7 +7,7 @@ const Input = ({ input, type = 'text', meta = {}, label }) => {
 
   return (
     <TextField
-      id={!isInvalid ? 'standard-basic' : 'standard-error'}
+      error={!!isInvalid}
       label={label}
       margin="normal"
       type={type}

@@ -7,5 +7,5 @@ export default configureStore({
   reducer: rootReducer,
   devTools: process.env.NODE_ENV !== 'production',
   preloadedState: initialState,
-  enhancers: [persistState()],
+  enhancers: [persistState(['passwords'])],
 })
