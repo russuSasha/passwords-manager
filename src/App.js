@@ -16,7 +16,7 @@ import {
   EDIT_PASSWORD_ROUTE,
   SETTINGS_ROUTE,
   NO_MATCH_ROUTE,
-} from 'constants/routes'
+} from './constants/routes'
 
 const App = () => (
   <Provider store={store}>

@@ -2,8 +2,8 @@ import React from 'react'
 import { connect } from 'react-redux'
 import { PasswordCreateEditForm } from 'containers'
 import { passwords as passwordsModule } from 'redux/modules'
-import { HOME_DASHBOARD_ROUTE } from 'constants/routes'
-import PROP_TYPES from 'constants/propTypes'
+import { HOME_DASHBOARD_ROUTE } from '../constants/routes'
+import PROP_TYPES from '../constants/propTypes'
 
 const EditPassword = ({
   history,

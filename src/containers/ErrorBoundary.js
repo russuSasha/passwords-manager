@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import styled from 'styled-components'
-import PROP_TYPES from 'constants/propTypes'
+import PROP_TYPES from '../constants/propTypes'
 
 const Container = styled.div`
   margin: 0 auto;

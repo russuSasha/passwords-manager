@@ -3,8 +3,8 @@ import { connect } from 'react-redux'
 import { Link } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core/styles'
 import { Grid, Paper, Button } from '@material-ui/core'
-import { CREATE_PASSWORD_ROUTE, EDIT_PASSWORD_ROUTE } from 'constants/routes'
-import PROP_TYPES from 'constants/propTypes'
+import { CREATE_PASSWORD_ROUTE, EDIT_PASSWORD_ROUTE } from '../constants/routes'
+import PROP_TYPES from '../constants/propTypes'
 
 const useStyles = makeStyles(theme => ({
   paper: {
@@ -19,8 +19,9 @@ const useStyles = makeStyles(theme => ({
 // TODO: add search
 const HomeDashboard = ({ passwords }) => {
   const classes = useStyles()
-
-  return (
+  console.log(1)
+  
+return (
     <>
       <Grid
         container

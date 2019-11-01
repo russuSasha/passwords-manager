@@ -3,9 +3,9 @@ import PropTypes from 'prop-types'
 import Joi from 'joi'
 import { reduxForm, Field } from 'redux-form'
 import { Container, Grid, Button } from '@material-ui/core'
-import Input from 'components/Input'
-import createJoiValidator from 'utils/createJoiValidator'
-import PROP_TYPES from 'constants/propTypes'
+import Input from '../components/Input'
+import createJoiValidator from '../utils/createJoiValidator'
+import PROP_TYPES from '../constants/propTypes'
 
 const validationSchema = Joi.object().keys({
   site: Joi.string()
