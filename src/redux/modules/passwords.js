@@ -1,4 +1,4 @@
-import uuidv1 from 'uuid/v1'
+import { v4 as uuidv4 } from 'uuid'
 import { handleActions, createAction } from 'redux-actions'
 import initialState from '../initialState'
 
@@ -18,7 +18,7 @@ export default handleActions(
       const { site, userName, password } = payload
 
       const newItem = {
-        id: uuidv1(),
+        id: uuidv4(),
         site,
         userName,
         password,

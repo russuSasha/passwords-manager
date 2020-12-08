@@ -1,4 +1,4 @@
-import { configureStore } from 'redux-starter-kit'
+import { configureStore } from '@reduxjs/toolkit'
 import persistState from 'redux-localstorage'
 import rootReducer from './reducers'
 import initialState from './initialState'

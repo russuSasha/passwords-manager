@@ -1,8 +1,6 @@
-import Joi from 'joi'
-
-export default schema => values => {
-  const result = Joi.validate(values, schema, { abortEarly: false })
-  if (result.error === null) {
+export default (schema) => (values) => {
+  const result = schema.validate(values, { abortEarly: false })
+  if (!result.error) {
     return {}
   }
 

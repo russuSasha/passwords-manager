@@ -15,7 +15,7 @@ export default {
   }),
   match: PropTypes.shape({
     isExact: PropTypes.bool,
-    params: PropTypes.object.isRequired,
+    params: PropTypes.shape().isRequired,
     url: PropTypes.string.isRequired,
   }),
   history: PropTypes.shape({
@@ -23,7 +23,7 @@ export default {
   }),
   options: PropTypes.arrayOf(
     PropTypes.shape({
-      value: PropTypes.any.isRequired,
+      value: PropTypes.string.isRequired,
       title: PropTypes.string,
     }).isRequired
   ),
